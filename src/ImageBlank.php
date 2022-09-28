@@ -7,31 +7,31 @@ use DenisPm\ImageSigner\constants\Colors;
 class ImageBlank extends Colors
 {
     private const WORD_GAP = " ";
-    private GdImage|bool $blank;
+    private GdImage|false $blank;
 
-    private int|bool $xSize;
-    private int|bool $ySize;
+    private int|false $xSize;
+    private int|false $ySize;
 
     /**
      * @return bool|GdImage
      */
-    public function getBlank(): GdImage|bool
+    public function getBlank(): GdImage|false
     {
         return $this->blank;
     }
 
     /**
-     * @return bool|int
+     * @return false|int
      */
-    public function getXSize(): bool|int
+    public function getXSize(): false|int
     {
         return $this->xSize;
     }
 
     /**
-     * @return bool|int
+     * @return false|int
      */
-    public function getYSize(): bool|int
+    public function getYSize(): false|int
     {
         return $this->ySize;
     }
